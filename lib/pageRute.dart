@@ -21,7 +21,7 @@ class PageRute extends StatelessWidget {
                 Navigator.of(context)
                     .push(MaterialPageRoute(builder: (context) => Page1()));
               },
-              child: Text("Go Pag 2"),
+              child: Text("Go to page1"),
             )
           ],
         ),

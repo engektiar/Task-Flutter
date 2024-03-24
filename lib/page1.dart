@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:yasinvaitask/page2.dart';
 
 class Page1 extends StatelessWidget {
   const Page1({super.key});
@@ -16,8 +17,18 @@ class Page1 extends StatelessWidget {
           children: [
             MaterialButton(
               color: Colors.teal,
-              onPressed: () {},
-              child: Text("Go Pag 2"),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+              child: Text("Back to home page "),
+            ),
+            MaterialButton(
+              color: Colors.teal,
+              onPressed: () {
+                Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) => Page2()));
+              },
+              child: Text("Page2"),
             )
           ],
         ),

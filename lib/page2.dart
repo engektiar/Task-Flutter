@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 
-class MyWidget extends StatelessWidget {
-  const MyWidget({super.key});
-
+class Page2 extends StatelessWidget {
+  const Page2({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("page2"),
+        title: Text(" this is page 2"),
       ),
       body: Container(
         width: double.infinity,
