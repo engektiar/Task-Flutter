@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:yasinvaitask/task.dart';
+import 'package:yasinvaitask/pageRute.dart';
 
 void main() {
   runApp(const Ektiar());
@@ -24,7 +24,7 @@ class _EktiarState extends State<Ektiar> {
         body: PageView(
           controller: _controller,
           children: [
-            Tesk(),
+            PageRute(),
           ],
         ),
       ),
